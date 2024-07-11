@@ -1,5 +1,5 @@
 name: yawcalc
-main: com.flyingsaturn.yawcalc.Plugin
+main: com.flyingsaturn.yawcalc.YawCalculator
 version: 0.0.1
 api-version: 1.15
 description: Calculates the yaw value when two coordinates are given
