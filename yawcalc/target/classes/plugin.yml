@@ -1,9 +1,0 @@
-name: yawcalc
-main: com.flyingsaturn.yawcalc.Plugin
-version: 0.0.1
-api-version: 1.15
-description: Calculates the yaw value when two coordinates are given
-commands:
-  calcyaw:
-    description: Calculates the yaw angle between two coordinates.
-    usage: /calcyaw <CurrentX> <CurrentZ> <DestX> <DestZ>
