@@ -55,7 +55,7 @@ public class YawCalculator extends JavaPlugin
         // Both zCurrent and zDest are to be negated before calculating the slope,
         // so written zCurrent - zDest instead of zDest - zCurrent
         // atan2 is for finding the angle of a line in radians, which is converted to degrees
-        double slope = Math.atan2(zCurrent - zDest, xDest - xCurrent) * (180 / Math.PI);
+        double slope = Math.toDegrees(Math.atan2(zCurrent - zDest, xDest - xCurrent));
         slope += 90; // Rotating the whole Minecraft yaw table 90 degrees anticlockwise
         slope *= -1; // On rotation, we get negative values in the positive quadrants of 'y' (or -Z axis)
         if (slope < -180)
