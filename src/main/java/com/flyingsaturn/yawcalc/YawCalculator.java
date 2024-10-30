@@ -61,7 +61,7 @@ public class YawCalculator extends JavaPlugin
         slope += 90; // Rotating the whole minecraft yaw table 90 degrees anticlockwise
         slope *= -1; // On rotation, we get negative values in the positive quadrants of 'y' (or -Z axis)
         if (Math.abs(slope) > 180)
-        slope = (360 - Math.abs(slope)) * -(Math.signum(slope));
+        slope = -360 * Math.signum(slope) + slope;
         if (slope == 0)
             return "-0.0";
         else if (slope == -180)
